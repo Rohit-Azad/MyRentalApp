@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".ManagerActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="#CB007FFF"
+        android:gravity="center_horizontal"
+        android:text="Inventory"
+        android:textColor="#E8EEE0E0"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnFind"
+            android:layout_width="210dp"
+            android:layout_height="match_parent"
+            android:text="Find Vehicles\nBased on\nCustomers'\nRequirement" />
+
+        <Button
+            android:id="@+id/btnReturn"
+            android:layout_width="199dp"
+            android:layout_height="match_parent"
+            android:text="Return Vehicle\nTo\nInventory" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="#CB007FFF"
+        android:gravity="center_horizontal"
+        android:text="Customer Dealings"
+        android:textColor="#E8EEE0E0"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnShowAllReservations"
+            android:layout_width="94dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Show\nAll\nReservations" />
+
+        <Button
+            android:id="@+id/btnSearchbyUniqueID"
+            android:layout_width="92dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Search\nby\nUnique ID" />
+    </LinearLayout>
+
+</LinearLayout>

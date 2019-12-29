@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_entries">ID,Make,Model,Seating Capacity</string-array>
+    <string-array name="locations">Burnaby,New Westminster,Downtown Vancouver,Surrey,Langley
+    </string-array>
+</resources>

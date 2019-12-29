@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".ClientInfoActivity">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="#CB007FFF"
+        android:gravity="center_horizontal"
+        android:text="Bookings Management"
+        android:textColor="#E8EEE0E0"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnShowAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show All" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="#CB007FFF"
+        android:gravity="center_horizontal"
+        android:text="@android:string/search_go"
+        android:textColor="#E8EEE0E0"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="Enter ID"
+            android:textColor="#E8EEE0E0" />
+
+        <EditText
+            android:id="@+id/etSearchValue"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:autofillHints=""
+            android:background="#E2D5D6E2"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#E8000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:text="Search By ID" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="#CB007FFF"
+                    android:gravity="center_horizontal"
+                    android:text="Booking Information"
+                    android:textColor="#E8EEE0E0"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="82dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorPrimary"
+                                    android:text="Full Name"
+                                    android:textColor="@color/Reeeeeeeee" />
+
+                                <EditText
+                                    android:id="@+id/etFName"
+                                    android:layout_width="272dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/Reeeeeeeee"
+                                    android:ems="10"
+                                    android:enabled="false"
+                                    android:focusable="false"
+                                    android:inputType="textPersonName"
+                                    android:textColor="@color/colorPrimaryDark" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorPrimary"
+                                    android:text="Unique ID"
+                                    android:textColor="@color/Reeeeeeeee" />
+
+                                <EditText
+                                    android:id="@+id/etUniqueID"
+                                    android:layout_width="250dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/Reeeeeeeee"
+                                    android:ems="10"
+                                    android:enabled="false"
+                                    android:focusable="false"
+                                    android:inputType="textPersonName"
+                                    android:textColor="@color/colorPrimaryDark" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorPrimary"
+                                    android:text="Booking ID"
+                                    android:textColor="@color/Reeeeeeeee" />
+
+                                <EditText
+                                    android:id="@+id/etBooking"
+                                    android:layout_width="254dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/Reeeeeeeee"
+                                    android:capitalize="characters"
+                                    android:ems="10"
+                                    android:enabled="false"
+                                    android:focusable="false"
+                                    android:inputType="textPersonName"
+                                    android:textColor="@color/colorPrimaryDark" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorPrimary"
+                                    android:text="Selected Car"
+                                    android:textColor="@color/Reeeeeeeee" />
+
+                                <EditText
+                                    android:id="@+id/etSelectedCar"
+                                    android:layout_width="268dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/Reeeeeeeee"
+                                    android:ems="10"
+                                    android:enabled="false"
+                                    android:focusable="false"
+                                    android:inputType="textEmailAddress"
+                                    android:textColor="@color/colorPrimaryDark" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorPrimary"
+                                    android:text="Selected Color"
+                                    android:textColor="@color/Reeeeeeeee" />
+
+                                <EditText
+                                    android:id="@+id/etSelectedColor"
+                                    android:layout_width="280dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/Reeeeeeeee"
+                                    android:ems="10"
+                                    android:enabled="false"
+                                    android:focusable="false"
+                                    android:inputType="textEmailAddress"
+                                    android:textColor="@color/colorPrimaryDark" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorPrimary"
+                                    android:text="Pick Up"
+                                    android:textColor="@color/Reeeeeeeee" />
+
+                                <EditText
+                                    android:id="@+id/etPickup"
+                                    android:layout_width="233dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/Reeeeeeeee"
+                                    android:capitalize="characters"
+                                    android:ems="10"
+                                    android:inputType="textPersonName"
+                                    android:textColor="@color/colorPrimaryDark" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="15dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorPrimary"
+                                    android:text="Drop Off"
+                                    android:textColor="@color/Reeeeeeeee" />
+
+                                <EditText
+                                    android:id="@+id/etDropOff"
+                                    android:layout_width="199dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/Reeeeeeeee"
+                                    android:inputType="textPersonName"
+                                    android:maxLength="14"
+                                    android:textColor="@color/colorPrimaryDark" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="15dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorPrimary"
+                                    android:text="Total Time"
+                                    android:textColor="@color/Reeeeeeeee" />
+
+                                <EditText
+                                    android:id="@+id/etTotalTime"
+                                    android:layout_width="199dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/Reeeeeeeee"
+                                    android:enabled="false"
+                                    android:focusable="false"
+                                    android:inputType="textPersonName"
+                                    android:maxLength="14"
+                                    android:textColor="@color/colorPrimaryDark" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/textView20"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:background="#CB007FFF"
+                                android:gravity="center_horizontal"
+                                android:text="Price Information"
+                                android:textColor="#E8EEE0E0"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:id="@+id/etCardType"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorPrimary"
+                                    android:text="Price"
+                                    android:textColor="@color/Reeeeeeeee" />
+
+                                <EditText
+                                    android:id="@+id/etPrice"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/Reeeeeeeee"
+                                    android:ems="10"
+                                    android:focusable="false"
+                                    android:inputType="textPersonName"
+                                    android:textColor="@color/colorPrimaryDark" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorPrimary"
+                                    android:text="Insurance"
+                                    android:textColor="@color/Reeeeeeeee" />
+
+                                <EditText
+                                    android:id="@+id/etInsurance"
+                                    android:layout_width="243dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/Reeeeeeeee"
+                                    android:editable="false"
+                                    android:ems="10"
+                                    android:enabled="false"
+                                    android:focusable="false"
+                                    android:inputType="textPersonName"
+                                    android:textColor="@color/colorPrimaryDark" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorPrimary"
+                                    android:text="Taxes"
+                                    android:textColor="@color/Reeeeeeeee" />
+
+                                <EditText
+                                    android:id="@+id/etTaxes"
+                                    android:layout_width="223dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/Reeeeeeeee"
+                                    android:editable="false"
+                                    android:ems="10"
+                                    android:enabled="false"
+                                    android:focusable="false"
+                                    android:inputType="textPersonName"
+                                    android:textColor="@color/colorPrimaryDark" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorPrimary"
+                                    android:text="Total Price"
+                                    android:textColor="@color/Reeeeeeeee" />
+
+                                <EditText
+                                    android:id="@+id/etTotalPrice"
+                                    android:layout_width="252dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/Reeeeeeeee"
+                                    android:editable="false"
+                                    android:ems="10"
+                                    android:enabled="false"
+                                    android:focusable="false"
+                                    android:inputType="textPersonName"
+                                    android:textColor="@color/colorPrimaryDark" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </ScrollView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnUpdate"
+                            android:layout_width="212dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:text="Update" />
+
+                        <Button
+                            android:id="@+id/btnDelete"
+                            android:layout_width="212dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:text="Delete" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>

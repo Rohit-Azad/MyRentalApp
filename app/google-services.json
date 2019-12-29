@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "565860729193",
+    "firebase_url": "https://carrentaltest-723dc.firebaseio.com",
+    "project_id": "carrentaltest-723dc",
+    "storage_bucket": "carrentaltest-723dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:565860729193:android:8867e45b7374c99e",
+        "android_client_info": {
+          "package_name": "com.example.myrentalapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "565860729193-p68f1ap1naui25bmcvtpcceh0dpvkoge.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myrentalapp",
+            "certificate_hash": "5f76a7e382bcc805097135186b78ebaf06ccf81d"
+          }
+        },
+        {
+          "client_id": "565860729193-37s88tf63868hnl37tvuii3ef6ktco4i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBZMBX1VqA1Nl668WXkCF1Rp8tSW0iu1I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "565860729193-37s88tf63868hnl37tvuii3ef6ktco4i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
